@@ -1,32 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InsertCodeKeypad : MonoBehaviour
 {
-    public int KeypadLimitPassword = 4;
-    public string PasswordValue = "";
-    [SerializeField]
-    private TextMeshPro PasswordText;
-    private int CodeInsertCount = 0;
-    private string CurrentPasswordText = "";
+    [Header("UI Settings")]
+    [SerializeField] private TextMeshPro passwordText;
+    [SerializeField] int keypadLimitPassword = 4;
+    [SerializeField] string PasswordValue = "";
 
+    private int codeInsertCount = 0;
+    private string currentPasswordText = "";
+
+    [Header("AudioClip")]
+    [SerializeField] public AudioClip WrongPasswordAudio;
+    [SerializeField] public AudioClip CorrectPasswordAudio;
+    [SerializeField] public AudioClip AddCodeAudio;
 
     private AudioSource AudioSource;
-    [SerializeField]
-    public AudioClip WrongPasswordAudio;
-    [SerializeField]
-    public AudioClip CorrectPasswordAudio;
-    [SerializeField]
-    public AudioClip AddCodeAudio;
-
     private bool CantInsertCode = true;
 
-
-    [SerializeField]
-    Animator ObjAnimator;
-    string BoolName = "Open";
+    [SerializeField] private UnityEvent CorretPasswordEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -37,9 +34,9 @@ public class InsertCodeKeypad : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CodeInsertCount == KeypadLimitPassword)
+        if (codeInsertCount == keypadLimitPassword)
         {
-            if (CurrentPasswordText == PasswordValue)
+            if (currentPasswordText == PasswordValue)
             {
                 StartCoroutine(CorrectPassword());
                 // open door
@@ -57,23 +54,23 @@ public class InsertCodeKeypad : MonoBehaviour
         {
             return;
         }
-        if (CodeInsertCount >= KeypadLimitPassword)
+        if (codeInsertCount >= keypadLimitPassword)
         {
             return;
         }
-        PasswordText.color = Color.white;
-        CurrentPasswordText = CurrentPasswordText + value.ToString();
-        PasswordText.text = CurrentPasswordText;
+        passwordText.color = Color.white;
+        currentPasswordText = currentPasswordText + value.ToString();
+        passwordText.text = currentPasswordText;
         PlayAudio(AddCodeAudio);
-        CodeInsertCount++;
+        codeInsertCount++;
     }
 
     public IEnumerator WrongPassword()
     {
         CantInsertCode = false;
-        CodeInsertCount = 0;
+        codeInsertCount = 0;
         PlayAudio(WrongPasswordAudio);
-        PasswordText.color = Color.red;
+        passwordText.color = Color.red;
         yield return new WaitForSeconds(1);
         ResetPassword();
     }
@@ -81,30 +78,23 @@ public class InsertCodeKeypad : MonoBehaviour
     public IEnumerator CorrectPassword()
     {
         CantInsertCode = false;
-        CodeInsertCount = 0;
-        PasswordText.color = Color.green;
+        codeInsertCount = 0;
+        passwordText.color = Color.green;
         PlayAudio(CorrectPasswordAudio);
         yield return new WaitForSeconds(1);
-        ToggleDoorOpen();
-        ResetPassword();
+        CorretPasswordEvent.Invoke();
     }
 
     void ResetPassword()
     {
         CantInsertCode = true;
-        CurrentPasswordText = "";
-        PasswordText.text = CurrentPasswordText;
+        currentPasswordText = "";
+        passwordText.text = currentPasswordText;
     }
 
     void PlayAudio(AudioClip audioClip)
     {
         AudioSource.clip = audioClip;
         AudioSource.Play();
-    }
-
-    public void ToggleDoorOpen()
-    {
-        bool isOpen = ObjAnimator.GetBool(BoolName);
-        ObjAnimator.SetBool(BoolName, !isOpen);
     }
 }
