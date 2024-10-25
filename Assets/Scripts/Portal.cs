@@ -19,7 +19,7 @@ public class Portal : MonoBehaviour
     {
         if(other.transform.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + sceneIndexOffset);   
+            SceneManager.LoadScene(sceneIndexOffset);   
         }
     }
 }
