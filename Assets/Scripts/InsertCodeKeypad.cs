@@ -83,6 +83,7 @@ public class InsertCodeKeypad : MonoBehaviour
         PlayAudio(CorrectPasswordAudio);
         yield return new WaitForSeconds(1);
         CorretPasswordEvent.Invoke();
+        ResetPassword();
     }
 
     void ResetPassword()

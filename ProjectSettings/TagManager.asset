@@ -8,6 +8,7 @@ TagManager:
   - LeftHand
   - RightHand
   - Energy
+  - FireInteraction
   layers:
   - Default
   - TransparentFX

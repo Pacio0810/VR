@@ -12,8 +12,6 @@ public class ShowTXT : MonoBehaviour
     private void Start()
     {
         BoxCollider boxCollider = GetComponent<BoxCollider>();
-
-        Debug.Log("Collidere Size: " + boxCollider.bounds.size.magnitude);
     }
 
     void Update()
