@@ -12,6 +12,7 @@ public class FireInteraction : MonoBehaviour
     private void Start()
     {
         BoxCollider = GetComponent<BoxCollider>();
+        //Physics.IgnoreCollision(BoxCollider, GetComponentInParent<MeshCollider>());
     }
 
     private void OnTriggerEnter(Collider other)

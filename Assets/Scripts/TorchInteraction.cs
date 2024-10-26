@@ -7,6 +7,7 @@ public class TorchInteraction : MonoBehaviour
     [Header("Fire Settings")]
     [SerializeField]GameObject FireObject;
     public float ActiveFireTimer = 45.0f;
+    public bool CanBeDisable = true;
 
     float CurrentFireTime;
 
@@ -46,6 +47,7 @@ public class TorchInteraction : MonoBehaviour
     public void DeactivateFire()
     {
         FireObject?.SetActive(false);
+        ResetFireTimer();
     }
 
 }
