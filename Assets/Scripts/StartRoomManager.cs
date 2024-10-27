@@ -6,8 +6,9 @@ using UnityEngine.Events;
 public class StartRoomManager : MonoBehaviour
 {
     [Header("Torch Settings")]
+    public GameObject[] TorchInFirstRoom;
     [SerializeField] private UnityEvent AllFireOn;
-    public int TorchCountInRoom;
+
 
     private int fireCounter = 0;
     
@@ -15,9 +16,17 @@ public class StartRoomManager : MonoBehaviour
     {
         fireCounter++;
         Debug.Log(fireCounter);
-        if (fireCounter >= TorchCountInRoom)
+        if (fireCounter >= TorchInFirstRoom.Length)
         {
             AllFireOn.Invoke();
+        }
+    }
+
+    public void FirstMissionComplete()
+    {
+        for (int i = 0; i < TorchInFirstRoom.Length; i++)
+        {
+            TorchInFirstRoom[i].GetComponent<TorchInteraction>().enabled = false;
         }
     }
 
