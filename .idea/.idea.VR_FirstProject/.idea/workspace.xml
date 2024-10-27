@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Library.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Library.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Modular Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Modular Dungeon.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FireInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FireInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Simple Modular Dungeon/Prefabs/Particle Systems/Fire Prefab/Fire_Base_Parent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Modular Dungeon/Prefabs/Particle Systems/Fire Prefab/Fire_Base_Parent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +87,7 @@
       <workItem from="1729982987606" duration="21000" />
       <workItem from="1730028030155" duration="7042000" />
       <workItem from="1730035417633" duration="2081000" />
+      <workItem from="1730046474059" duration="984000" />
     </task>
     <servers />
   </component>
