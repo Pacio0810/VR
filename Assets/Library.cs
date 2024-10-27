@@ -15,4 +15,9 @@ public class Library : MonoBehaviour
     {
         
     }
+
+    public void Activate()
+    {
+        Debug.Log("library activated");
+    }
 }

@@ -1,52 +1,69 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TorchInteraction : MonoBehaviour
 {
     [Header("Fire Settings")]
-    [SerializeField]GameObject FireObject;
+    [SerializeField] private GameObject fireObject;
     public float ActiveFireTimer = 45.0f;
     public bool CanBeDisable = true;
 
-    float CurrentFireTime;
-
+    [SerializeField] private UnityEvent OnFireInteraction;
+    [SerializeField] private UnityEvent FireOffEvent;
+    
+    private float currentFireTime;
+    private BoxCollider boxCollider;
+    
     public void Start()
     {
-        CurrentFireTime = ActiveFireTimer;
+        boxCollider = GetComponent<BoxCollider>();
+        
+        currentFireTime = ActiveFireTimer;
+    }
+
+    private void OnTriggerEnter(Collider Other)
+    {
+        boxCollider.enabled = false;
+        if (Other.gameObject.CompareTag("FireInteraction"))
+        {
+            OnFireInteraction?.Invoke();
+        }
     }
 
     public void ActiveFire()
     {
-        if (FireObject.activeInHierarchy)
+        if (fireObject.activeInHierarchy)
         {
             ResetFireTimer();
         }
 
-        FireObject?.SetActive(true);
+        fireObject?.SetActive(true);
     }
 
     private void Update()
     {
-        if (FireObject.activeInHierarchy)
+        if (fireObject.activeInHierarchy && CanBeDisable)
         {
-            CurrentFireTime -= Time.deltaTime;
+            currentFireTime -= Time.deltaTime;
 
-            if (CurrentFireTime < 0)
+            if (currentFireTime < 0)
             {
+                boxCollider.enabled = true;
                 DeactivateFire();
             }
         }
     }
 
-    public void ResetFireTimer()
+    void ResetFireTimer()
     {
-        CurrentFireTime = ActiveFireTimer;
+        currentFireTime = ActiveFireTimer;
     }
-
-    public void DeactivateFire()
+    void DeactivateFire()
     {
-        FireObject?.SetActive(false);
+        fireObject?.SetActive(false);
+        FireOffEvent?.Invoke();
         ResetFireTimer();
     }
 

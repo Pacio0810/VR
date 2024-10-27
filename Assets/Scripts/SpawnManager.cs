@@ -6,22 +6,24 @@ using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField] string SceneName;
+    [SerializeField] private string sceneName;
 
     private void OnEnable()
     {
         SceneManager.sceneLoaded += SpawnPlayerAtLocation;
     }
 
-    private void SpawnPlayerAtLocation(Scene ActiveScene, LoadSceneMode mode)
+    private void SpawnPlayerAtLocation(Scene ActiveScene, LoadSceneMode Mode)
     {
-        Debug.Log(ActiveScene.name);
-        if (SceneName == ActiveScene.name)
+        if (sceneName != ActiveScene.name)
         {
-            if (PlayerManager.Instance != null)
-            {
-                PlayerManager.Instance.OnSceneLoaded(transform);
-            }
+            return;
         }
+        
+        if (PlayerManager.Instance != null)
+        {
+                PlayerManager.Instance.OnSceneLoaded(transform);
+        }
+        
     }
 }

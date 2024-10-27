@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="" />
+    <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Library.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Modular Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Modular Dungeon.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FireInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FireInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Modular Dungeon/Prefabs/Particle Systems/Fire Prefab/Fire_Base_Parent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Modular Dungeon/Prefabs/Particle Systems/Fire Prefab/Fire_Base_Parent.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +35,12 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Object__Interaction&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -74,6 +92,8 @@
       <updated>1729981981149</updated>
       <workItem from="1729981983204" duration="60000" />
       <workItem from="1729982987606" duration="21000" />
+      <workItem from="1730028030155" duration="7042000" />
+      <workItem from="1730035417633" duration="2081000" />
     </task>
     <servers />
   </component>
