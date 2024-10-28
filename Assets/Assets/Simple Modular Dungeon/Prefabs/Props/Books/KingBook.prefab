@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1257524193596898353}
   - component: {fileID: 2013510440769089185}
   m_Layer: 0
-  m_Name: ChessHorseBook
+  m_Name: KingBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 75686451099620250}
   - component: {fileID: 7618752141598128035}
   m_Layer: 0
-  m_Name: HorsePNG
+  m_Name: KingPNG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -397,7 +397,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.055, y: 0, z: 0.04}
-  m_LocalScale: {x: 0.23986, y: 0.23986, z: 0.23986}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3581499096019965120}
@@ -430,7 +430,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4a7c90dc704924d4997b8da19d3b793a, type: 2}
+  - {fileID: 2100000, guid: f430a2d0bdedda8468926aa03a4066f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
