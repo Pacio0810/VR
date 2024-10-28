@@ -15664,6 +15664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Podium Parent 001
       objectReference: {fileID: 0}
+    - target: {fileID: 476754165585648590, guid: 6d52c1779545cdc4f9b4ee89cee569b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3144826122030481997, guid: 6d52c1779545cdc4f9b4ee89cee569b0,
         type: 3}
       propertyPath: m_RootOrder
@@ -38034,6 +38039,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3293618022458003505, guid: ac318d8caf47c9b43aceedd1239acbef,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293618022458003505, guid: ac318d8caf47c9b43aceedd1239acbef,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293618022458003505, guid: ac318d8caf47c9b43aceedd1239acbef,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293618022458003505, guid: ac318d8caf47c9b43aceedd1239acbef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293618022458003505, guid: ac318d8caf47c9b43aceedd1239acbef,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293618022458003505, guid: ac318d8caf47c9b43aceedd1239acbef,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293618022458003505, guid: ac318d8caf47c9b43aceedd1239acbef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293618022458003505, guid: ac318d8caf47c9b43aceedd1239acbef,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5614928729470487081, guid: ac318d8caf47c9b43aceedd1239acbef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38092,31 +38137,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7651634008329401266}
-    - targetCorrespondingSourceObject: {fileID: 5523908580034185018, guid: ac318d8caf47c9b43aceedd1239acbef,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2872218461298031002}
   m_SourcePrefab: {fileID: 100100000, guid: ac318d8caf47c9b43aceedd1239acbef, type: 3}
---- !u!1 &2872218461298031001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5523908580034185018, guid: ac318d8caf47c9b43aceedd1239acbef,
-    type: 3}
-  m_PrefabInstance: {fileID: 2872218461298031000}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2872218461298031002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2872218461298031001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 297ddd22c5c840344a80ff8238093973, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PositionTarget: {x: 0, y: 0, z: 0}
-  Duration: 2
 --- !u!1001 &2967290908355389197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56517,7 +56538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PositionTarget: {x: -4, y: 0, z: -1}
-  Duration: 2
+  Duration: 5
+  MovementSpeed: 2
 --- !u!1001 &7694888794885586163
 PrefabInstance:
   m_ObjectHideFlags: 0

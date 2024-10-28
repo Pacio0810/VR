@@ -25,7 +25,11 @@ public class TorchInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider Other)
     {
-        boxCollider.enabled = false;
+        if (boxCollider != null)
+        {
+            boxCollider.enabled = false;
+        }
+        
         if (Other.gameObject.CompareTag("FireInteraction"))
         {
             OnFireInteraction?.Invoke();

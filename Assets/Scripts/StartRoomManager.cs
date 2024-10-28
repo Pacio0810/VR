@@ -19,6 +19,7 @@ public class StartRoomManager : MonoBehaviour
         if (fireCounter >= TorchInFirstRoom.Length)
         {
             AllFireOn.Invoke();
+            FirstMissionComplete();
         }
     }
 

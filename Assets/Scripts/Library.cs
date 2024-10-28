@@ -5,10 +5,19 @@ using UnityEngine;
 
 public class Library : MonoBehaviour
 {
+    [Header("Activate Settings")]
     public Vector3 PositionTarget;
-    public float Duration = 2.0f;
+    public float Duration = 5.0f;
+    public float MovementSpeed = 2.0f;
+
+    private void Start()
+    {
+        StartCoroutine(MoveCoroutine());
+    }
+
     public void Activate()
     {
+        gameObject.SetActive(true);
         StartCoroutine(MoveCoroutine());
     }
 
@@ -18,7 +27,7 @@ public class Library : MonoBehaviour
 
         while (elapsedTime < Duration)
         {
-            transform.position = Vector3.Lerp(transform.position, PositionTarget,  elapsedTime / Duration);
+            transform.position = Vector3.Lerp(transform.position, PositionTarget,  Time.deltaTime * MovementSpeed);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
