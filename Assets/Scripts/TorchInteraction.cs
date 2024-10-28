@@ -8,7 +8,8 @@ public class TorchInteraction : MonoBehaviour
     [Header("Fire Settings")]
     [SerializeField] private GameObject fireObject;
     public float ActiveFireTimer = 45.0f;
-
+        
+    [Header("Torch Fire Event")]
     [SerializeField] private UnityEvent OnFireInteraction;
     [SerializeField] private UnityEvent FireOffEvent;
     

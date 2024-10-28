@@ -13,6 +13,11 @@ public class SpawnManager : MonoBehaviour
         SceneManager.sceneLoaded += SpawnPlayerAtLocation;
     }
 
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= SpawnPlayerAtLocation;
+    }
+
     private void SpawnPlayerAtLocation(Scene ActiveScene, LoadSceneMode Mode)
     {
         if (sceneName != ActiveScene.name)
