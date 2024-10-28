@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Modular Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Modular Dungeon.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartRoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartRoomManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +90,7 @@
       <workItem from="1730046474059" duration="984000" />
       <workItem from="1730067976832" duration="1440000" />
       <workItem from="1730109899665" duration="2123000" />
+      <workItem from="1730112473516" duration="274000" />
     </task>
     <servers />
   </component>

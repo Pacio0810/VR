@@ -8,7 +8,6 @@ public class TorchInteraction : MonoBehaviour
     [Header("Fire Settings")]
     [SerializeField] private GameObject fireObject;
     public float ActiveFireTimer = 45.0f;
-    public bool CanBeDisable = true;
 
     [SerializeField] private UnityEvent OnFireInteraction;
     [SerializeField] private UnityEvent FireOffEvent;
@@ -48,7 +47,7 @@ public class TorchInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (fireObject.activeInHierarchy && CanBeDisable)
+        if (fireObject.activeInHierarchy)
         {
             currentFireTime -= Time.deltaTime;
 
