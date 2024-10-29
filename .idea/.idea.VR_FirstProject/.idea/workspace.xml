@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/PNG/chess/Horse.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/PNG/chess/Horse/New Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/PNG/chess/Horse/New Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/PNG/chess/Horse/chess.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/PNG/chess/Horse/chess.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Simple Modular Dungeon/Prefabs/Props/Books/Book Parent 002.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Simple Modular Dungeon/Prefabs/Props/Books/Book Parent 002.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Simple Modular Dungeon/Prefabs/Props/Books/ChessHorseBook.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Simple Modular Dungeon/Prefabs/Props/Books/ChessHorseBook.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Modular Dungeon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Modular Dungeon.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Library.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Library.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +108,7 @@
       <workItem from="1730114900160" duration="328000" />
       <workItem from="1730126864594" duration="1712000" />
       <workItem from="1730140118283" duration="71000" />
+      <workItem from="1730210470376" duration="1117000" />
     </task>
     <servers />
   </component>

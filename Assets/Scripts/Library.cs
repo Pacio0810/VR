@@ -17,7 +17,6 @@ public class Library : MonoBehaviour
 
     public void Activate()
     {
-        gameObject.SetActive(true);
         StartCoroutine(MoveCoroutine());
     }
 
@@ -32,6 +31,7 @@ public class Library : MonoBehaviour
             yield return null;
         }
         
+        gameObject.SetActive(true);
         transform.position = PositionTarget;
     }
 }
