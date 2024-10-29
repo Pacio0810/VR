@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 3569625151602324961}
   - component: {fileID: 8281243008740985892}
   m_Layer: 0
-  m_Name: RookBook
+  m_Name: BishopBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 3875253377209490}
   - component: {fileID: 2921950190835677501}
   m_Layer: 0
-  m_Name: RookChess
+  m_Name: BishopChess
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -413,7 +413,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c0ae0bc9d1a27204599d0c80cc57ee15, type: 2}
+  - {fileID: 2100000, guid: 7591b5ae2d916a244a4f236d7896974b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
