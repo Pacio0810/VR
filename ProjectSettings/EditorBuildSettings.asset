@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Modular Dungeon.unity
+    path: Assets/Scenes/FirsLevel.unity
     guid: 27915ac565aadf048b89a94d619c501d
   - enabled: 0
     path: Assets/Scenes/SpaceTest.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Scenes/TestScene.unity
+    path: Assets/Scenes/StartScene.unity
     guid: 673ddbce79b2acc478d5496734784213
   - enabled: 0
     path: Assets/Scenes/MainRoom.unity
