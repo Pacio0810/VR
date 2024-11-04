@@ -8,9 +8,9 @@ public class Portal : MonoBehaviour
     [SerializeField]
     private int sceneIndexOffset;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider Other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(Other.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(sceneIndexOffset);   
         }
