@@ -9,8 +9,9 @@ public class Library : MonoBehaviour
     public Vector3 PositionTarget;
     public float Duration = 5.0f;
     public float MovementSpeed = 2.0f;
-
-    [SerializeField] private GameObject LibraryObject;
+    
+    [Header("Books in Library")]
+    [SerializeField]private GameObject[] books;
     
     private void Start()
     {
@@ -25,7 +26,7 @@ public class Library : MonoBehaviour
     IEnumerator MoveCoroutine()
     {
         float elapsedTime = 0;
-
+        
         while (elapsedTime < Duration)
         {
             transform.position = Vector3.Lerp(transform.position, PositionTarget,  Time.deltaTime * MovementSpeed);
@@ -33,7 +34,14 @@ public class Library : MonoBehaviour
             yield return null;
         }
         
-        LibraryObject.SetActive(true);
         transform.position = PositionTarget;
+        
+        foreach (GameObject book in books)
+        {
+            book.GetComponentInChildren<BoxCollider>().enabled = true;
+            book.GetComponentInChildren<Rigidbody>().useGravity = true;
+        }
+
+        books = null; // imposto l'array a null per liberare memoria
     }
 }
