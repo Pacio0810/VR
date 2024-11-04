@@ -10,6 +10,8 @@ public class Library : MonoBehaviour
     public float Duration = 5.0f;
     public float MovementSpeed = 2.0f;
 
+    [SerializeField] private GameObject LibraryObject;
+    
     private void Start()
     {
         StartCoroutine(MoveCoroutine());
@@ -17,7 +19,7 @@ public class Library : MonoBehaviour
 
     public void Activate()
     {
-        StartCoroutine(MoveCoroutine());
+        gameObject.SetActive(true);
     }
 
     IEnumerator MoveCoroutine()
@@ -31,7 +33,7 @@ public class Library : MonoBehaviour
             yield return null;
         }
         
-        gameObject.SetActive(true);
+        LibraryObject.SetActive(true);
         transform.position = PositionTarget;
     }
 }

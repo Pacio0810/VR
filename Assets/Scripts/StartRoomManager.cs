@@ -15,7 +15,6 @@ public class StartRoomManager : MonoBehaviour
     public void TorchFireObjectOn()
     {
         fireCounter++;
-        Debug.Log(fireCounter);
         if (fireCounter >= TorchInFirstRoom.Length)
         {
             AllFireOn.Invoke();
