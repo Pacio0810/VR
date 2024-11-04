@@ -39,31 +39,31 @@ public class XRDistanceGrabInteractable : XRGrabInteractable
 
     public Vector3 ComputeVelocity()
     {
-        Vector3 DifferencePosition = rayInteractor.transform.position - transform.position;
-        Vector3 DifferencePositionXZ = new Vector3(DifferencePosition.x, 0, DifferencePosition.z);
-        float DifferencePositionXZLength = DifferencePositionXZ.magnitude;
-        float DifferencePositionYLength = DifferencePosition.y;
+        Vector3 differencePosition = rayInteractor.transform.position - transform.position;
+        Vector3 differencePositionXZ = new Vector3(differencePosition.x, 0, differencePosition.z);
+        float differencePositionXZLength = differencePositionXZ.magnitude;
+        float differencePositionYLength = differencePosition.y;
 
-        float AngleInRadians = jumpAngleInDegree * Mathf.Deg2Rad;
+        float angleInRadians = jumpAngleInDegree * Mathf.Deg2Rad;
 
         // Formula per calcolare la velocita' necessaria di un oggetto per raggiungere una determinata posizione (differencePosition) con un determinato angolo (AngleinDegree)
-        float jumpSpeed = Mathf.Sqrt(-Physics.gravity.y * Mathf.Pow(DifferencePositionXZLength, 2) / 
-                        (2 * Mathf.Cos(AngleInRadians) * Mathf.Cos(AngleInRadians) * (DifferencePositionXZLength * Mathf.Tan(AngleInRadians) - DifferencePositionYLength)));
+        float jumpSpeed = Mathf.Sqrt(-Physics.gravity.y * Mathf.Pow(differencePositionXZLength, 2) / 
+                        (2 * Mathf.Cos(angleInRadians) * Mathf.Cos(angleInRadians) * (differencePositionXZLength * Mathf.Tan(angleInRadians) - differencePositionYLength)));
         
-        Vector3 JumpVelocityVector = DifferencePositionXZ.normalized * Mathf.Cos(AngleInRadians) * jumpSpeed + Vector3.up * Mathf.Sin(AngleInRadians) * jumpSpeed;
+        Vector3 jumpVelocityVector = differencePositionXZ.normalized * Mathf.Cos(angleInRadians) * jumpSpeed + Vector3.up * Mathf.Sin(angleInRadians) * jumpSpeed;
 
-        return JumpVelocityVector;
+        return jumpVelocityVector;
     }
 
-    protected override void OnSelectEntered(SelectEnterEventArgs args)
+    protected override void OnSelectEntered(SelectEnterEventArgs Args)
     {
-        if(args.interactorObject is XRRayInteractor)
+        if(Args.interactorObject is XRRayInteractor)
         {
             trackPosition = false;
             trackRotation = false;
             throwOnDetach = false;
 
-            rayInteractor = (XRRayInteractor)args.interactorObject;
+            rayInteractor = (XRRayInteractor)Args.interactorObject;
             previousPosition = rayInteractor.transform.position;
             canJump = true;
         }
@@ -74,6 +74,6 @@ public class XRDistanceGrabInteractable : XRGrabInteractable
             throwOnDetach = true;
         }
 
-        base.OnSelectEntered(args);
+        base.OnSelectEntered(Args);
     }
 }
