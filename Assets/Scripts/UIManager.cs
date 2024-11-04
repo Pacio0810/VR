@@ -3,13 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    private UIManager instance;
-    void Start()
+    [HideInInspector] public UIManager Instance {get; private set;}
+    private void Start()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            Instance = this;
         }
         else
         {
@@ -25,5 +24,11 @@ public class UIManager : MonoBehaviour
     public void LoadScene(int SceneIndex)
     {
         SceneManager.LoadScene(SceneIndex);
+    }
+
+    public void ToggleActiveState(GameObject ObjectToToggle)
+    {
+        bool isActive = ObjectToToggle.activeInHierarchy;
+        ObjectToToggle.SetActive(!isActive);
     }
 }

@@ -2,23 +2,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject Player;
-    [SerializeField] private GameObject InteractionManager;
+    [SerializeField] private GameObject Manager;
 
-    GameManager instance;
+    public GameManager instance { get; private set; }
 
     public void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            DontDestroyOnLoad(Player);
-            DontDestroyOnLoad(InteractionManager);
-        }
-        else
+        if (instance != this && instance != null)
         {
             Destroy(gameObject);
+            return;
         }
+        
+        instance = this;
+        DontDestroyOnLoad(Manager);
     }
 }
