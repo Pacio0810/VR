@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     [HideInInspector] public UIManager Instance {get; private set;}
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
         {
