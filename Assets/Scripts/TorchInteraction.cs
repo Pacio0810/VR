@@ -19,10 +19,20 @@ public class TorchInteraction : MonoBehaviour
     public void Start()
     {
         boxCollider = GetComponent<BoxCollider>();
+
+        // if (boxCollider == null)
+        // {
+        //     boxCollider = GetComponentInChildren<BoxCollider>();
+        //
+        //     if (boxCollider == null)
+        //     {
+        //         Debug.Log("Null");
+        //     }
+        // }
         
         currentFireTime = ActiveFireTimer;
     }
-
+    
     private void OnTriggerEnter(Collider Other)
     {
         if (boxCollider != null)

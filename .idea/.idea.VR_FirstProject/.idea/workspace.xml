@@ -7,7 +7,7 @@
     <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +123,7 @@
       <workItem from="1730738706929" duration="9000" />
       <workItem from="1730738785894" duration="1229000" />
       <workItem from="1730819922722" duration="1546000" />
+      <workItem from="1730821596922" duration="1136000" />
     </task>
     <servers />
   </component>
