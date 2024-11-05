@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -19,16 +17,6 @@ public class TorchInteraction : MonoBehaviour
     public void Start()
     {
         boxCollider = GetComponent<BoxCollider>();
-
-        // if (boxCollider == null)
-        // {
-        //     boxCollider = GetComponentInChildren<BoxCollider>();
-        //
-        //     if (boxCollider == null)
-        //     {
-        //         Debug.Log("Null");
-        //     }
-        // }
         
         currentFireTime = ActiveFireTimer;
     }
@@ -80,5 +68,4 @@ public class TorchInteraction : MonoBehaviour
         FireOffEvent?.Invoke();
         ResetFireTimer();
     }
-
 }
