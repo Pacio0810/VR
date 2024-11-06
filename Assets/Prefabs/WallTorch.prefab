@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 16
   m_IsActive: 1
 --- !u!4 &1644110757412993820
 Transform:
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireObject: {fileID: 4000899838777211867}
   ActiveFireTimer: 60
-  CanBeDisable: 1
   OnFireInteraction:
     m_PersistentCalls:
       m_Calls:
@@ -149,6 +148,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1644110757412993820}
     m_Modifications:
+    - target: {fileID: 558439698409224303, guid: f62b31a3464faf14f934e38f9ee55eba,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 758249524779751364, guid: f62b31a3464faf14f934e38f9ee55eba,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 2730074263542334518, guid: f62b31a3464faf14f934e38f9ee55eba,
         type: 3}
       propertyPath: m_IsActive
@@ -158,6 +167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730074263542334518, guid: f62b31a3464faf14f934e38f9ee55eba,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5537283635842207538, guid: f62b31a3464faf14f934e38f9ee55eba,
         type: 3}
@@ -209,10 +223,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6470549833601996427, guid: f62b31a3464faf14f934e38f9ee55eba,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 7183553855393488263, guid: f62b31a3464faf14f934e38f9ee55eba,
         type: 3}
       propertyPath: m_Name
       value: Fire_Torch_Parent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183553855393488263, guid: f62b31a3464faf14f934e38f9ee55eba,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683272320781719239, guid: f62b31a3464faf14f934e38f9ee55eba,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

@@ -6,8 +6,7 @@ public class StartRoomManager : MonoBehaviour
     [Header("Torch Settings")]
     public GameObject[] TorchInFirstRoom;
     [SerializeField] private UnityEvent AllFireOn;
-
-
+    
     private int fireCounter = 0;
     
     public void TorchFireObjectOn()
