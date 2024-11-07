@@ -4,7 +4,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject Manager;
 
-    public GameManager instance { get; private set; }
+    public static GameManager instance { get; private set; }
 
     public void Awake()
     {
