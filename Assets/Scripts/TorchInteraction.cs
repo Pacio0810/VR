@@ -17,8 +17,13 @@ public class TorchInteraction : MonoBehaviour
     public void Start()
     {
         boxCollider = GetComponent<BoxCollider>();
-        
-        currentFireTime = ActiveFireTimer;
+        ResetFireTimer();
+    }
+
+    public void SetActiveFireTimer(float NewFireTimer)
+    {
+        ActiveFireTimer = NewFireTimer;
+        ResetFireTimer();
     }
     
     private void OnTriggerEnter(Collider Other)

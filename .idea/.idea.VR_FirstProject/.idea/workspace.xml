@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SecondChallenge.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SecondChallenge.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TorchInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +130,7 @@
       <workItem from="1730906259752" duration="1079000" />
       <workItem from="1730996966205" duration="24000" />
       <workItem from="1730997058280" duration="2159000" />
+      <workItem from="1731002881729" duration="250000" />
     </task>
     <servers />
   </component>
