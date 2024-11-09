@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR;
+using UnityEngine.XR.Management;
 
 public class UIManager : MonoBehaviour
 {
@@ -30,5 +32,14 @@ public class UIManager : MonoBehaviour
     {
         bool isActive = ObjectToToggle.activeInHierarchy;
         ObjectToToggle.SetActive(!isActive);
+    }
+
+    public void RecenterView()
+    {
+        var xrSubsystem = XRGeneralSettings.Instance?.Manager?.activeLoader?.GetLoadedSubsystem<XRInputSubsystem>();
+        if (xrSubsystem != null)
+        {
+            xrSubsystem.TryRecenter();
+        }
     }
 }

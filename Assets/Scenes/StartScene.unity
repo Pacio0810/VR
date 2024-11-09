@@ -2458,6 +2458,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6051004834481681772, guid: 69a9aa195b84c004b93d0d8438a31661,
+        type: 3}
+      propertyPath: sceneIndexOffset
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8103837242616730539, guid: 69a9aa195b84c004b93d0d8438a31661,
         type: 3}
       propertyPath: m_Name
@@ -2526,6 +2531,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 330541747225396068, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 330541747225396068, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 330541747225396068, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 330541747225396068, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 466604214916992681, guid: 610849d121d273849bf147d91620ec26,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2581,10 +2606,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1043193416197699597, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043193416197699597, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043193416197699597, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043193416197699597, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4293164371590706967, guid: 610849d121d273849bf147d91620ec26,
         type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952897178452279511, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952897178452279511, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952897178452279511, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952897178452279511, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7248359706062840728, guid: 610849d121d273849bf147d91620ec26,
         type: 3}
@@ -2599,7 +2664,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7333007003397702084, guid: 610849d121d273849bf147d91620ec26,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 610849d121d273849bf147d91620ec26, type: 3}
 --- !u!114 &4506113169994457078 stripped
 MonoBehaviour:
