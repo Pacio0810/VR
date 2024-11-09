@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,7 +6,7 @@ public class BoardChallengeManager : MonoBehaviour
     [Header("Second Challenge Settings")]
     public int PieceToPlace = 4;
     public int PieceInPosition = 0;
-    [SerializeField] UnityEvent SecondChallengeCompletedEvent;
+    [SerializeField] private UnityEvent SecondChallengeCompletedEvent;
     
     public static BoardChallengeManager Instance { get; private set; }
 
@@ -27,6 +24,7 @@ public class BoardChallengeManager : MonoBehaviour
     public void AddPieceInPosition()
     {
         PieceInPosition++;
+        CheckAllPiecesInPosition();
     }
 
     public void RemovePieceInPosition()
