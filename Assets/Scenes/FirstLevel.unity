@@ -21366,7 +21366,7 @@ PrefabInstance:
     - target: {fileID: 6051004834481681772, guid: 69a9aa195b84c004b93d0d8438a31661,
         type: 3}
       propertyPath: sceneIndexOffset
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7383348921225899470, guid: 69a9aa195b84c004b93d0d8438a31661,
         type: 3}

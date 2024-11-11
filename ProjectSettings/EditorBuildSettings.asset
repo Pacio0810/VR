@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstLevel.unity
     guid: 27915ac565aadf048b89a94d619c501d
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 37065c1ca26799e468f1f8a58fc23dc9
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 18885c658fb4fcf439adc4f125ee3d15,
       type: 2}
