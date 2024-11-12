@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_FirstProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sounds/484338__bonnyorbit__fireplace-crackling-wood-little-flame.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sounds/484338__bonnyorbit__fireplace-crackling-wood-little-flame.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Stone Chalice Parent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Stone Chalice Parent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Credits.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Credits.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FirstLevel/OcclusionCullingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FirstLevel/OcclusionCullingData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoardChallengeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoardChallengeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChessInPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChessInPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartRoomManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartRoomManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +141,7 @@
       <workItem from="1731153296128" duration="125000" />
       <workItem from="1731153846026" duration="489000" />
       <workItem from="1731417695252" duration="1380000" />
+      <workItem from="1731426536196" duration="1983000" />
     </task>
     <servers />
   </component>
