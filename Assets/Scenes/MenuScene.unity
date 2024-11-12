@@ -526,7 +526,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hand Menu
+  m_text: 'MAIN MENU
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d7b2d30493f0cbd45b521eb9b85e631b, type: 2}
   m_sharedMaterial: {fileID: 2758607176698073382, guid: d7b2d30493f0cbd45b521eb9b85e631b,
@@ -1658,7 +1660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: KING'S MOVE
+  m_text: THE KING'S MOVE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d7b2d30493f0cbd45b521eb9b85e631b, type: 2}
   m_sharedMaterial: {fileID: 2758607176698073382, guid: d7b2d30493f0cbd45b521eb9b85e631b,
@@ -1790,7 +1792,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 19.22}
-  m_SizeDelta: {x: 50, y: 5}
+  m_SizeDelta: {x: 80, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &984366826
 GameObject:

@@ -97,9 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 2a4f484815031724cb40c055c1e45f8c,
+  m_LightingDataAsset: {fileID: 112000000, guid: e8b7399187ada1a4fab00b300f6afd99,
     type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 320ec0ed4439da94ba0be924b2545e01,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4893,6 +4894,11 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2123081355000281319, guid: 4e4108b8244889646b6ea581c4a3f716,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6332653469905272892, guid: 4e4108b8244889646b6ea581c4a3f716,
         type: 3}
       propertyPath: m_RootOrder
@@ -5822,6 +5828,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lava Grate Parent 001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2123081355000281319, guid: 4e4108b8244889646b6ea581c4a3f716,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6332653469905272892, guid: 4e4108b8244889646b6ea581c4a3f716,
         type: 3}
@@ -11377,6 +11388,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978681479}
     m_Modifications:
+    - target: {fileID: 2621976410052159555, guid: c23e31fa1d2ac1c4b808105671ec82dd,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6703871679423678342, guid: c23e31fa1d2ac1c4b808105671ec82dd,
         type: 3}
       propertyPath: m_Name
@@ -11905,6 +11921,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978681479}
     m_Modifications:
+    - target: {fileID: 2621976410052159555, guid: c23e31fa1d2ac1c4b808105671ec82dd,
+        type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621976410052159555, guid: c23e31fa1d2ac1c4b808105671ec82dd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621976410052159555, guid: c23e31fa1d2ac1c4b808105671ec82dd,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6703871679423678342, guid: c23e31fa1d2ac1c4b808105671ec82dd,
         type: 3}
       propertyPath: m_Name
@@ -16527,6 +16558,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978681479}
     m_Modifications:
+    - target: {fileID: 2621976410052159555, guid: c23e31fa1d2ac1c4b808105671ec82dd,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6703871679423678342, guid: c23e31fa1d2ac1c4b808105671ec82dd,
         type: 3}
       propertyPath: m_Name
@@ -46668,6 +46704,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava Grate Parent 001
       objectReference: {fileID: 0}
+    - target: {fileID: 2123081355000281319, guid: 4e4108b8244889646b6ea581c4a3f716,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6332653469905272892, guid: 4e4108b8244889646b6ea581c4a3f716,
         type: 3}
       propertyPath: m_RootOrder
@@ -47746,6 +47787,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978681479}
     m_Modifications:
+    - target: {fileID: 2621976410052159555, guid: c23e31fa1d2ac1c4b808105671ec82dd,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6703871679423678342, guid: c23e31fa1d2ac1c4b808105671ec82dd,
         type: 3}
       propertyPath: m_Name
@@ -53256,6 +53302,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lava Grate Parent 001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2123081355000281319, guid: 4e4108b8244889646b6ea581c4a3f716,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6332653469905272892, guid: 4e4108b8244889646b6ea581c4a3f716,
         type: 3}
