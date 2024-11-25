@@ -17,4 +17,9 @@ public class GameManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(Manager);
     }
+
+    public void ToggleObject(GameObject GameObject)
+    {
+        GameObject.SetActive(!GameObject.activeSelf);
+    }
 }

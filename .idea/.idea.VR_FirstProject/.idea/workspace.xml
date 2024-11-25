@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db3033c-b9e8-4568-a109-55b5c366af99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ActiveBoardLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ActiveBoardLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XR Origin (XR Rig).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/XR Origin (XR Rig).prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +138,7 @@
       <workItem from="1731426536196" duration="1983000" />
       <workItem from="1732544580616" duration="611000" />
       <workItem from="1732546138765" duration="530000" />
+      <workItem from="1732556748786" duration="9000" />
     </task>
     <servers />
   </component>
