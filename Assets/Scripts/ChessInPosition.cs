@@ -7,13 +7,14 @@ public class ChessInPosition : MonoBehaviour
 
     private void OnTriggerEnter(Collider Other)
     {
-        if (Other.CompareTag(RequiredChessTag) && Other.transform.localScale.x.Equals(1f))
+        if (Other.CompareTag(RequiredChessTag) && Other.transform.localScale.x >= 0.95f)
         {
             if (Other.GetComponent<XRGrabInteractable>().isSelected)
             {
                 Other.GetComponent<XRGrabInteractable>().interactorsSelecting.Clear();
             }
             
+            Other.GetComponent<Rigidbody>().useGravity = false;
             Other.transform.parent = transform;
             Other.transform.rotation = transform.rotation;
             Other.transform.position = transform.position;
@@ -25,13 +26,4 @@ public class ChessInPosition : MonoBehaviour
             enabled = false;
         }
     }
-
-    // private void OnTriggerExit(Collider Other)
-    // {
-    //     if (Other.CompareTag(RequiredChessTag))
-    //     {
-    //         BoardChallengeManager.Instance.RemovePieceInPosition();
-    //         Debug.Log(BoardChallengeManager.Instance.PieceInPosition);
-    //     }
-    // }
 }
