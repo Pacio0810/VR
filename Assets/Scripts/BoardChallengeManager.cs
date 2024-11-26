@@ -8,8 +8,6 @@ public class BoardChallengeManager : MonoBehaviour
     public int PieceInPosition = 0;
     [SerializeField] private UnityEvent SecondChallengeCompletedEvent;
     
-    private AudioSource audioSource;
-    
     public static BoardChallengeManager Instance { get; private set; }
 
     public void Awake()
@@ -21,8 +19,6 @@ public class BoardChallengeManager : MonoBehaviour
         }
         
         Instance = this;
-        
-        audioSource = GetComponent<AudioSource>();
     }
 
     public void AddPieceInPosition()
@@ -40,7 +36,6 @@ public class BoardChallengeManager : MonoBehaviour
     {
         if (PieceInPosition == PieceToPlace)
         {
-            audioSource.Play();
             SecondChallengeCompletedEvent?.Invoke();
         }
     }

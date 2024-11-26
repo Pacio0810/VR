@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class TorchInteraction : MonoBehaviour
 {
     [Header("Fire Settings")]
-    [SerializeField] private GameObject fireObject;
+    public GameObject fireObject;
     public float ActiveFireTimer = 45.0f;
         
     [Header("Torch Fire Event")]
@@ -13,6 +13,8 @@ public class TorchInteraction : MonoBehaviour
     
     private float currentFireTime;
     private BoxCollider boxCollider;
+    
+    
     
     public void Start()
     {
@@ -33,9 +35,12 @@ public class TorchInteraction : MonoBehaviour
             boxCollider.enabled = false;
         }
         
-        if (Other.gameObject.CompareTag("FireInteraction"))
+        if (Other.gameObject.CompareTag("FireInteraction") && Other.gameObject.GetComponent<TorchInteraction>() != null)
         {
-            OnFireInteraction?.Invoke();
+            if (Other.gameObject.GetComponent<TorchInteraction>().fireObject.activeSelf)
+            {
+                OnFireInteraction?.Invoke();
+            }
         }
     }
 
