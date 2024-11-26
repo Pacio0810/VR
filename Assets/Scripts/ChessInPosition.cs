@@ -17,6 +17,7 @@ public class ChessInPosition : MonoBehaviour
             Other.transform.parent = transform;
             Other.transform.rotation = transform.rotation;
             Other.transform.position = transform.position;
+            
             Other.GetComponent<XRGrabInteractable>().enabled = false;
             
             BoardChallengeManager.Instance.AddPieceInPosition();
