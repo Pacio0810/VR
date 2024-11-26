@@ -28,6 +28,11 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(SceneIndex);
     }
 
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void ToggleActiveState(GameObject ObjectToToggle)
     {
         bool isActive = ObjectToToggle.activeInHierarchy;
