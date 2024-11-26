@@ -14,16 +14,20 @@ public class ChessInPosition : MonoBehaviour
                 Other.GetComponent<XRGrabInteractable>().interactorsSelecting.Clear();
             }
             
-            Other.GetComponent<Rigidbody>().useGravity = false;
+            // Disabilito il Rigidbody
+            Other.GetComponent<Rigidbody>().detectCollisions = false;
+            Other.GetComponent<Rigidbody>().isKinematic = true;
+
+            // Setto il parent, la sua posizione e rotazione
             Other.transform.parent = transform;
             Other.transform.rotation = transform.rotation;
             Other.transform.position = transform.position;
             
+            // Disabilito il GrabComponent, il box collider e aggiungo il pezzo al counter dei pezzi in posizione nel manager
             Other.GetComponent<XRGrabInteractable>().enabled = false;
-            
             BoardChallengeManager.Instance.AddPieceInPosition();
-
-            enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
+            
         }
     }
 }
